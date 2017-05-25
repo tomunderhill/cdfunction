@@ -112,7 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="HelloHttpTrigger\function.json" />
+    <Content Include="BlobOcrTrigger\function.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -124,7 +124,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelloHttpTrigger.cs" />
+    <Compile Include="BlobOcrTrigger.cs" />
+    <Compile Include="OcrObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

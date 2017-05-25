@@ -1,0 +1,21 @@
+﻿{
+    "disabled": false,
+    "scriptFile": "..\\bin\\FunctionsLibraryProject.dll",
+    "entryPoint": "FunctionsLibraryProject.BlobOcrTrigger.Run",
+    "bindings": [
+        {
+            "name": "myBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "{name}",
+            "connection": "functionimageocrstorage_STORAGE"
+        },
+        {
+            "type": "apiHubFile",
+            "name": "return",
+            "direction": "out",
+            "path": "output-cs/{name}",
+            "connection": "onedrive_ONEDRIVE"
+        }
+    ]
+}
